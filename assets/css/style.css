@@ -12,7 +12,7 @@
 body {
   font-family: "Lora", "Open Sans", sans-serif;
   color: #444444;
-  background-color: #ffe8d658;
+  background-color: rgba(10, 27, 15, 0.677);
 }
 
 a {
@@ -58,7 +58,7 @@ h1 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #009961;
+  border: 6px solid #6b705c;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -347,7 +347,7 @@ h1 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(4, 19, 5, 0.9);
+  background: #6b705c95;
   transition: 0.3s;
   z-index: 999;
 }
@@ -442,7 +442,7 @@ h1 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.109);
+  /* background: rgba(0, 0, 0, 0.109); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -461,7 +461,7 @@ h1 {
   font-size: 100px;
   font-weight: 300;
   line-height: 56px;
-  color: #fff;
+  color: #eee;
   font-style: italic;
   z-index: 2;
 }
@@ -469,7 +469,7 @@ h1 {
 #hero h2 {
   color: #eee;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 32px;
   z-index: 3;
 }
 
@@ -572,8 +572,12 @@ h1 {
 
 .hero-section {
   position: fixed;
-  height: vh; /* Adjust the height as needed */
+  height: 100vh; /* Adjust the height as needed */
   z-index: -1;
+  
+}
+
+.vid-op {
   opacity: 0.6;
 }
 
@@ -1459,7 +1463,7 @@ __________________________________________________________________
 }
 
 .contact {
-  background: rgba(0, 0, 0, 0.053);
+  /* background: rgba(0, 0, 0, 0.053); */
 }
 
 .contact-text {
@@ -1468,13 +1472,13 @@ __________________________________________________________________
 
 .contact .info i {
   font-size: 32px;
-  color: #6b705c;
+  color: #eee;
   float: left;
   line-height: 1;
 }
 
 .contact h2 {
-  color: #ffffff;
+  color: #eee;
 }
 
 .contact .info h4 {
@@ -1482,14 +1486,23 @@ __________________________________________________________________
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: #eee;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #ffffff;
+  color: #eee;
+}
+
+.contact p a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.contact p a:hover {
+  color: #6b705c;
 }
 
 .contact .info .email,
@@ -1637,7 +1650,7 @@ __________________________________________________________________
 --------------------------------------------------------------*/
 #footer {
   background: #6b705c;
-  color: #fff;
+  color: #eee;
   font-size: 18px;
   text-align: center;
   padding: 30px 0;
@@ -1646,7 +1659,7 @@ __________________________________________________________________
 #footer h3 {
   font-size: 52px;
   font-weight: 300;
-  color: #fff;
+  color: #eee;
   position: relative;
   font-family: "Lora", "Poppins", sans-serif;
   padding: 0;
